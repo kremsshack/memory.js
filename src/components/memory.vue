@@ -165,7 +165,7 @@ definirDifficulte('intermediaire');
 </template>
 
 <style scoped>
-/* GENERAL */
+
 .difficulty-selector button {
     padding: 8px 15px; margin: 0 5px; background-color: #ecf0f1; border: 1px solid #ccc; cursor: pointer; border-radius: 4px; transition: background-color 0.2s;
 }
@@ -173,7 +173,7 @@ definirDifficulte('intermediaire');
     background-color: #3498db; color: white; font-weight: bold; border-color: #3498db;
 }
 
-/* PLATEAU ET GRILLE */
+
 .plateau-jeu {
     display: grid;
     gap: 10px;
@@ -182,10 +182,10 @@ definirDifficulte('intermediaire');
     padding: 20px;
     border: 1px solid #eee;
     border-radius: 8px;
-    perspective: 1000px; /* Nécessaire pour l'effet 3D */
+    perspective: 1000px; 
 }
 
-/* CARTE DE BASE */
+
 .carte {
     width: 100px;
     height: 100px;
@@ -196,8 +196,8 @@ definirDifficulte('intermediaire');
     border-radius: 5px;
 }
 
-/* ANIMATION ET ÉTATS */
-.carte.est-retournee, .carte.est-trouvee { /* La carte est tournée si cliquée OU si trouvée */
+
+.carte.est-retournee, .carte.est-trouvee { 
     transform: rotateY(180deg);
 }
 
@@ -212,7 +212,7 @@ definirDifficulte('intermediaire');
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Cache la face opposée pendant la rotation */
+    backface-visibility: hidden;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -220,7 +220,7 @@ definirDifficulte('intermediaire');
 }
 
 .face-visible {
-    transform: rotateY(180deg); /* Tourne la face pour qu'elle soit visible à 180° */
+    transform: rotateY(180deg); 
     padding: 0;
 }
 
@@ -242,10 +242,9 @@ definirDifficulte('intermediaire');
     border-color: #2ecc71; 
     opacity: 0.7; 
     cursor: default;
-    pointer-events: none; /* TRÈS IMPORTANT: Les paires trouvées ne sont plus cliquables */
 }
 
-/* STATISTIQUES ET BOUTON */
+
 .stats-jeu {
     display: flex;
     justify-content: space-around;
@@ -265,7 +264,7 @@ definirDifficulte('intermediaire');
     cursor: pointer;
 }
 
-/* TITRES ET MISE EN PAGE */
+
 h1 {
     text-align: center;
     font-weight: bold;
