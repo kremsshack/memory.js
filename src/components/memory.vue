@@ -276,4 +276,12 @@ h2 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+button{
+  background-color: #2ecc71;
+  border-radius: 5px; 
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
 </style>
